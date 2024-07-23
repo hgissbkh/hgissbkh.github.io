@@ -108,6 +108,49 @@
         .academic-experience ul li {
             margin-bottom: 10px;
         }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 0 10px;
+            }
+            .left-column, .right-column {
+                max-width: 100%;
+                flex: 1 0 100%;
+                margin: 10px 0;
+            }
+            .right-column {
+                min-width: auto;
+            }
+            iframe.article-preview {
+                height: 200px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header, footer {
+                padding: 15px 0;
+            }
+            header h1, footer p {
+                font-size: 1.2em;
+            }
+            .contact-info img {
+                width: 25px;
+                height: 25px;
+            }
+            h2 {
+                font-size: 1.2em;
+                padding-bottom: 4px;
+            }
+            h3 {
+                font-size: 1em;
+                margin-top: 15px;
+            }
+            .academic-experience ul {
+                padding-left: 15px;
+            }
+        }
     </style>
 </head>
 <body>
