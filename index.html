@@ -110,6 +110,13 @@
             margin-bottom: 10px;
         }
 
+        .article-divider {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+
         /* Media Queries */
         @media (max-width: 768px) {
             .container {
@@ -191,16 +198,19 @@
                 <p>General-purpose multilingual vector representations, used in retrieval, regression and classification, are traditionally obtained from bidirectional encoder models. Despite their wide applicability, encoders have been recently overshadowed by advances in generative decoder-only models. However, many innovations driving this progress are not inherently tied to decoders. In this paper, we revisit the development of multilingual encoders through the lens of these advances, and introduce EuroBERT, a family of multilingual encoders covering European and widely spoken global languages. Our models outperform existing alternatives across a diverse range of tasks, spanning multilingual capabilities, mathematics, and coding, and natively supporting sequences of up to 8,192 tokens. We also examine the design decisions behind EuroBERT, offering insights into our dataset composition and training pipeline. We publicly release the EuroBERT models, including intermediate training checkpoints, together with our training framework.</p>
                 <p><a href="https://arxiv.org/pdf/2503.05500">Click here to read the full paper</a></p>
                 <iframe src="https://arxiv.org/pdf/2503.05500" class="article-preview" style="width: 100%;height: 250px"></iframe>
+                <hr class="article-divider">
                 <h3>MMTEB: Massive Multilingual Text Embedding Benchmark</h3>
                 <p><em><strong>Venue: ICLR, 05/25</strong></em></p>
                 <p>Text embeddings are typically evaluated on a limited set of tasks, which are constrained by language, domain, and task diversity. To address these limitations and provide a more comprehensive evaluation, we introduce the Massive Multilingual Text Embedding Benchmark (MMTEB) - a large-scale, community-driven expansion of MTEB, covering over 500 quality-controlled evaluation tasks across 250+ languages. MMTEB includes a diverse set of challenging, novel tasks such as instruction following, long-document retrieval, and code retrieval, representing the largest multilingual collection of evaluation tasks for embedding models to date. Using this collection, we develop several highly multilingual benchmarks, which we use to evaluate a representative set of models. We find that while large language models (LLMs) with billions of parameters can achieve state-of-the-art performance on certain language subsets and task categories, the best-performing publicly available model is multilingual-e5-large-instruct with only 560 million parameters. To facilitate accessibility and reduce computational cost, we introduce a novel downsampling method based on inter-task correlation, ensuring a diverse selection while preserving relative model rankings. Furthermore, we optimize tasks such as retrieval by sampling hard negatives, creating smaller but effective splits. These optimizations allow us to introduce benchmarks that drastically reduce computational demands. For instance, our newly introduced zero-shot English benchmark maintains a ranking order similar to the full-scale version but at a fraction of the computational cost.</p>
                 <p><a href="https://arxiv.org/pdf/2502.13595">Click here to read the full paper</a></p>
                 <iframe src="https://arxiv.org/pdf/2502.13595" class="article-preview" style="width: 100%;height: 250px"></iframe>
+                <hr class="article-divider">
                 <h3>Is Preference Alignment Always the Best Option to Enhance LLM-Based Translation? An Empirical Analysis</h3>
                 <p><em><strong>Venue: WMT, 11/24 (oral)</strong></em></p>
                 <p>Neural metrics for machine translation (MT) evaluation have become increasingly prominent due to their superior correlation with human judgments compared to traditional lexical metrics. Researchers have therefore utilized neural metrics through quality-informed decoding strategies, achieving better results than likelihood-based methods. With the rise of Large Language Models (LLMs), preference-based alignment techniques have gained attention for their potential to enhance translation quality by optimizing model weights directly on preferences induced by quality estimators. This study focuses on Contrastive Preference Optimization (CPO) and conducts extensive experiments to evaluate the impact of preference-based alignment on translation quality. Our findings indicate that while CPO consistently outperforms Supervised Fine-Tuning (SFT) on high-quality data with regard to the alignment metric, it may lead to instability across downstream evaluation metrics, particularly between neural and lexical ones. Additionally, we demonstrate that relying solely on the base model for generating candidate translations achieves performance comparable to using multiple external systems, while ensuring better consistency across downstream metrics.</p>
                 <p><a href="https://aclanthology.org/2024.wmt-1.127/">Click here to read the full paper</a></p>
                 <iframe src="https://aclanthology.org/2024.wmt-1.127.pdf" class="article-preview" style="width: 100%;height: 250px"></iframe>
+                <hr class="article-divider">
                 <h3>Towards Trustworthy Reranking: A Simple yet Effective Abstention Mechanism</h3>
                 <p><em><strong>Venue: TMLR, 09/24</strong></em></p>
                 <p>Neural Information Retrieval (NIR) has significantly improved upon heuristic-based Information Retrieval (IR) systems. Yet, failures remain frequent, the models used often being unable to retrieve documents relevant to the user's query. We address this challenge by proposing a lightweight abstention mechanism tailored for real-world constraints, with particular emphasis placed on the reranking phase. We introduce a protocol for evaluating abstention strategies in black-box scenarios (typically encountered when relying on API services), demonstrating their efficacy, and propose a simple yet effective data-driven mechanism. We provide open-source code for experiment replication and abstention implementation, fostering wider adoption and application in diverse contexts.</p>
